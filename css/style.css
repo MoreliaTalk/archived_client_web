@@ -1,0 +1,56 @@
+#zag{
+	position:fixed;
+	left:0px;
+	top:0px;
+	margin-top:-25px;
+	margin-left:25px;
+
+}
+#userdata{
+	position:fixed;
+	left:0px;
+	top:50px;
+	margin-left:10px;
+}
+#view{
+	width: 373px;
+	height: 471px;
+	outline: none;
+	resize: none;
+	background: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#vodiv{
+	position: relative;
+	width: 450px;
+	height: 95px;
+
+}
+
+#input{
+	width: 274px;
+	height: 51px;
+	position: absolute;
+	resize: none;
+	left: 13px;
+}
+
+#buttoninput{
+	position: absolute;
+	right: 13px;
+	width:135px;
+	height:51px;
+}
+.as{
+	background: white;
+	border-right: 2px solid yellow;
+	border-left:2px solid blue;
+	border-top: 2px solid blue;
+	border-bottom: 2px solid yellow;
+	border-radius: 10px;
+	outline: none;
+}
+
