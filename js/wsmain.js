@@ -10,8 +10,7 @@ ws.onmessage = function(event) {
     var viewtext;
     var message = JSON.parse(event.data)
     if (message["mode"]=="message") { 
-        var datemessages = new Date(message["timestamp"]*1000)
-        var dt = datemessages.getHours()+":"+datemessages.getMinutes()+":"+datemessages.getSeconds()
+        var dt = String(new Date(message["timestamp"]*1000)).substring(15,24)
         infomes = "["+dt+" "+message["username"]+"]";
         textmes = message["text"]
         if (message["username"]==getCookie("username")){
