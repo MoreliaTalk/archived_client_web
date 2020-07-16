@@ -1,41 +1,29 @@
-#zag{
-	position:fixed;
-	left:0px;
-	top:0px;
-	margin-top:-25px;
-	margin-left:25px;
-
+#mes{
+	position: absolute;
+	top: 0px;
+	left:220px;
+	overflow-y: auto;
+	height: 81vh;
+	width:83.89vw;
 }
-#userdata{
-	position:fixed;
-	left:0px;
-	top:50px;
-	margin-left:10px;
-}
-#view{
-	width: 373px;
-	height: 471px;
-	outline: none;
-	resize: none;
-	background: white;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
+#hello{
+	text-align: center;
+	width: 200px;
 	border-radius: 10px;
+	margin: 10px;
 }
+#zag{
+	margin:-10px;
+}
+
 
 #vodiv{
-	position: relative;
-	width: 450px;
-	height: 95px;
-
-}
-
-#input{
-	width: 274px;
-	height: 51px;
 	position: absolute;
-	resize: none;
-	left: 13px;
+	bottom: 0px;
+	left:220px;
+	width:82.5vw;
+	border-radius: 10px;
+
 }
 
 #buttoninput{
@@ -43,14 +31,15 @@
 	right: 13px;
 	width:135px;
 	height:51px;
+	border-radius: 10px;
 }
 .as{
 	background: white;
-	border-right: 2px solid yellow;
-	border-left:2px solid blue;
-	border-top: 2px solid blue;
-	border-bottom: 2px solid yellow;
+	border: 2px solid black;
 	border-radius: 10px;
 	outline: none;
+	resize: none;
+	width: 68vw;
+	height: 51px;
 }
 
