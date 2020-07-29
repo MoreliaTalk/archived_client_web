@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<script type="text/javascript">
+		if (document.cookie == ""){
+			document.location.href = "/vxod.html";
+		}
+	</script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>MoreliaTalk</title>
+	<title>MoreliaTalk WEB</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/scroll.css">
+	<link rel="stylesheet" type="text/css" href="css/buble.css">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
 </head>
-<body>
-	<div id = "zag"><h3><em>MoreliaTalk</em></h3></div>
-
-	<div id = "userdata" class="card-panel #3f51b5 indigo">
-		<div class="card-panel">
-			<div class="input-field">
-				<input id = "username" type="text">
-				<label for="username">Имя</label>
-			</div>
-			<div class="input-field">
-				<input id = "password" type="password">
-				<label for="password">Пароль</label>
-			</div>
-			<button onclick="reg()" class="btn waves-effect waves-light #ffeb3b yellow black-text" style="border-radius: 10px;">Авторизоваться</button>
-		</div>
+<body style="background-image: url('img/back.jpg');">
+	<div class="card-panel" style="width: 200px;margin: 10px;border-radius:10px;"><h4 id="zag"><em>MoreliaTalk</em></h4></div>
+	<div class="card-panel" id="hello">
+		<h6>Текущий пользователь: <p id ="us"></p><a style = "border-radius:10px;"class="btn waves-effect waves-light #ffeb3b yellow black-text" href="vxod.html">Сменить</a></h6>
 	</div>
-	<div class="container" align = "center" >
-		<div class="card-panel #3f51b5 indigo" style="width:450px;" id="cardview">
-			<textarea id = "view" readonly="readonly"></textarea>
-		</div>
+	<div id = "mes">
 	</div>
-	<div align="center" class="container">
-		<div id = "vodiv" class="card-panel #3f51b5 indigo">
-			<textarea id = "input" class="as"></textarea>
+	<div class="container">
+		<div id = "vodiv" class="card-panel">
+			<input id = "input"></input>
 			<button class="btn waves-effect waves-light #ffeb3b yellow black-text" id = "buttoninput" onclick="send_message()">Отправить</button>
 		</div>
 	</div>
-
-	<script type="text/javascript" src="js/websoket.js"></script>
+	<script type="text/javascript" src="js/username.js"></script>
+	<script type="text/javascript" src="js/wsmain.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>

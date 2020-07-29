@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MoreliaTalk WEB</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<style type="text/css">
+		body{
+			background-image: url("img/back.jpg");
+			
+		}
+		#zag{
+			margin-top: 10%;
+			width: 500px;
+			border-radius: 30px;
+		}
+
+		#userdata{
+			width: 500px;
+			border-radius: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div align="center">
+		<div id = "zag" class="card-panel"><h1 style="margin: 0px;"><em>Вход</em></h1></div>
+		<div id = "userdata" class="card-panel">
+			<div class="input-field">
+				<input id = "username" type="text">
+				<label for="username">Имя</label>
+			</div>
+			<div class="input-field">
+				<input id = "password" type="password">
+				<label for="password">Пароль</label>
+			</div>
+			<button onclick="reg()" class="btn waves-effect waves-light #ffeb3b yellow black-text" style="border-radius: 10px;">Авторизоваться</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/wsreg.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
