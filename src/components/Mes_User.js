@@ -1,5 +1,6 @@
 import React, { useState , useEffect} from 'react';  
 import Text_Mes from "./function_minor.js"
+import Svg from "../svg/Mes_me.svg"
 
 function MesUser(){
     const mes_style = {
@@ -9,7 +10,7 @@ function MesUser(){
         borderImageWidth: "30px 30px 30px 30px",
         borderImageOutset: "0px 0px 0px 0px",
         borderImageRepeat: "stretch stretch",
-        borderImageSource: 'url("svg/Mes_me.svg")',
+        borderImageSource: "url("+Svg+")",
     }
     const mes_time_style = {
         color:"grey",

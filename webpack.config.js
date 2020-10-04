@@ -18,17 +18,16 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.svg$/,
+        use: ["file-loader"]
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html"
-    }),
-    new CopyPlugin({
-      patterns: [
-        { from: './src/svg/', to: './svg/' }
-      ]
     })
   ]
 };
